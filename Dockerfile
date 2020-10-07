@@ -1,6 +1,2 @@
 FROM debian
-RUN apt-get update && apt-get install -y gfortran
-RUN apt-get install -y h5utils
-RUN apt-get install -y hdf5-helpers
-RUN apt-get install -y hdf5-tools
-RUN apt-get install -y libhdf5-dev
+RUN apt-get update && apt-get install -y gfortran h5utils hdf5-helpers hdf5-tools libhdf5-dev && apt-get clean
